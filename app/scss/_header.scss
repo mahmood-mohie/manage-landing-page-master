@@ -1,0 +1,23 @@
+.header {
+
+    nav {
+        padding: 2.5rem 1.5rem;
+    }
+    &__logo {
+        img {
+            width: 9.125rem;
+            height: 1.5rem;
+        }
+    }
+    &__menu {
+        >span {
+            display: block;
+            height: 3px;
+            width: 24px;
+            background-color: $darkBlue ;
+            &:not(:last-child) {
+                margin-bottom: 3px;
+            }
+        }
+    }
+}
