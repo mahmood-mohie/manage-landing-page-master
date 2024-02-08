@@ -23,11 +23,11 @@ Vary Light Gray: hsl(0, 0%, 98%)
 
 ## Typography
 
-### Body Copy
+### Body Copy done
 
 - Font size: 16px
 
-### Font
+### Font done
 
 - Family: [Be Vietnam Pro](https://fonts.google.com/specimen/Be+Vietnam+Pro)
 - Weights: 400, 500, 700

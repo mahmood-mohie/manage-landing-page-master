@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <title>Manage landing page</title>
   <link rel="stylesheet" href="/dist/style.css">
 
@@ -19,24 +21,28 @@
         <img src="/images/logo.svg" alt="">
       </a>
       <!-- mobile markup -->
-      <a href="#" class="header__menu">
+      <a href="#" class="header__menu hide-for-desktop">
         <span></span>
         <span></span>
         <span></span>
       </a>
       <!-- desktop markup -->
+      <div class="header__links hide-for-mobile">
+        <a href="#">Pricing</a>
+        <a href="#">Product</a>
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Community</a>
+      </div>
+      <!-- cta button -->
+      <a href="#" class="button header__cta hide-for-mobile">Get Started</a>
     </nav>
   </header>
 
 
 <!-- 
-  Pricing
-  Product
-  About Us
-  Careers
-  Community
-
-  Get Started
+  
+  
 
   Bring everyone together to build better products.
 
