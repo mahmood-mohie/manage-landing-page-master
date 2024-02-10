@@ -24,7 +24,8 @@
     background-image: linear-gradient(transparent ,$veryDarkBlue);
 }
     nav {
-        padding: 2.375rem 1.5rem;
+        padding-top: 2.375rem ;
+        padding-bottom: 2.375rem ;
     }
     &__logo {
         display: flex;
@@ -49,6 +50,23 @@
             &:not(:last-child) {
                 margin-bottom: 3px;
             }
+        }
+    }
+    &__menu {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+        padding-top: 1.875rem;
+        padding-bottom: 1.875rem;
+        width: calc(100% - 3rem);
+        margin-top: 1.5rem;
+        border-radius: 5px;
+        > a {
+            display: block;
+            padding: 1.03125rem 0;
+            text-align: center;
+            color: $darkBlue;
         }
     }
     &__links {
