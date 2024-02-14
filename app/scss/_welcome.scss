@@ -1,6 +1,6 @@
 .welcome {
     &__content {
-        @include breakpoint-up(medium){
+        @include breakpoint-up(large){
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -12,9 +12,9 @@
         width: 100%;
         background-position: center center;
         background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 21rem;
-        
+        background-size: contain;
+        height: 21rem;
+    
         @include breakpoint-up(medium){
             height: 31.25rem;
             order: 2;
