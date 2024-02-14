@@ -50,7 +50,7 @@ button, .button {
     cursor: pointer;
     border-radius: 50px;
     font-weight: 700;
-    box-shadow: $brightRed 0px 2px 8px 0px;
+    box-shadow: 0px 3px 10px rgb(0,0,0,0.31);
     transition: opacity 200ms ease-in-out;
     &:hover {
         opacity: 0.7;
