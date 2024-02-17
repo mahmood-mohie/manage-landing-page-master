@@ -19,12 +19,6 @@
         text-align: center;
         padding-right: 2.25rem;
         padding-left: 2.25rem;
-        h2 {
-            font-size: 30px;
-            @include breakpoint-up(medium) {
-                font-size: 2.375rem;
-            }
-        }
         p {
             @include breakpoint-up(large) {
                 font-size: 1.0625rem;
