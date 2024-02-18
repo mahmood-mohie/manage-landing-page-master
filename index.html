@@ -106,51 +106,49 @@
   <!-- section testimonies -->
   <section class="testimonials">
     <div class="testimonials__content container">
+
       <h2>What they’ve said</h2>
-      <div class="slider" data-pos="0">
 
-        <div class="slider__slides">
-          <!-- items here -->
-          <div class="slider__slide">
-            <div class="avatar"><img src="/images/avatar-anisha.png" alt=""></div>
-            <div class="name">Anisha Li</div>
-            <p>“Manage has supercharged our team’s workflow. The ability to maintain 
-              visibility on larger milestones at all times keeps everyone motivated.”</p>
-          </div>
-          <div class="slider__slide">
-            <div class="avatar"><img src="/images/avatar-ali.png" alt=""></div>
-            <div class="name">Ali Bravo</div>
-            <p>“We have been able to cancel so many other subscriptions since using 
-              Manage. There is no more cross-channel confusion and everyone is much 
-              more focused.”</p>
-          </div>
-          <div class="slider__slide">
-            <div class="avatar"><img src="/images/avatar-richard.png" alt=""></div>
-            <div class="name">Richard Watts</div>
-            <p>“Manage allows us to provide structure and process. It keeps us organized 
-              and focused. I can’t stop recommending them to everyone I talk to!”</p>
-          </div>
-          <div class="slider__slide">
-            <div class="avatar"><img src="/images/avatar-shanai.png" alt=""></div>
-            <div class="name">Shanai Gough</div>
-            <p>“Their software allows us to track, manage and collaborate on our projects 
-              from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
-          </div>
-      
+      <div class="testimonials__slider">
+        <div class="testimonials__card">
+          <img src="/images/avatar-anisha.png" alt="portrait">
+          <div class="name">Anisha Li</div>
+          <p>“Manage has supercharged our team’s workflow. The ability to maintain 
+            visibility on larger milestones at all times keeps everyone motivated.”</p>
         </div>
 
-        <div class="slider__dots">
-          <!-- dots here -->
-          <a href="#" class="slider__indicator"></a>
-          <a href="#" class="slider__dot" data-pos="0"></a>
-          <a href="#" class="slider__dot" data-pos="1"></a>
-          <a href="#" class="slider__dot" data-pos="2"></a>
-          <a href="#" class="slider__dot" data-pos="3"></a>
+        <div class="testimonials__card">
+          <img src="/images/avatar-ali.png" alt="portrait">
+          <div class="name">Ali Bravo</div>
+          <p>“We have been able to cancel so many other subscriptions since using 
+            Manage. There is no more cross-channel confusion and everyone is much 
+            more focused.”</p>
         </div>
 
+        <div class="testimonials__card">
+          <img src="/images/avatar-richard.png" alt="portrait">
+          <div class="name">Richard Watts</div>
+          <p>“Manage allows us to provide structure and process. It keeps us organized 
+            and focused. I can’t stop recommending them to everyone I talk to!”</p>
+        </div>
+
+        <div class="testimonials__card">
+          <img src="/images/avatar-shanai.png" alt="portrait">
+          <div class="name">Shanai Gough</div>
+          <p>“Their software allows us to track, manage and collaborate on our projects 
+            from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+        </div>
+      </div>
+
+      <div class="testimonials__dots">
+        <a href="#" class="dot" onclick="currentCard(0, event)"></a>
+        <a href="#" class="dot" onclick="currentCard(1, event)"></a>
+        <a href="#" class="dot" onclick="currentCard(2, event)"></a>
+        <a href="#" class="dot" onclick="currentCard(3, event)"></a>
       </div>
 
       <a href="#" class="button">Get Started</a>
+
     </div>
   </section>
 

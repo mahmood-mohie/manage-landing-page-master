@@ -23,25 +23,23 @@ hamburgerMenu.addEventListener("click", ()=> {
 })
 
 //Testimonial Swipe Silder
-let dots          = 4;
-let sliderElem    = document.querySelector('.slider')
-let dotElems      = sliderElem.querySelectorAll('.slider__dot')
-let indicatorElem = sliderElem.querySelector('.slider__indicator')
+let dots = document.querySelectorAll(".dot")
+let cards = document.querySelectorAll(".testimonials__card")
 
-Array.prototype.forEach.call(dotElems, (dotElem) =>{
-		
-	dotElem.addEventListener('click', (e) => {
-
-		let currentPos = parseInt(sliderElem.getAttribute('data-pos'))
-		let newPos     = parseInt(dotElem.getAttribute('data-pos'))
-
-		let newDirection     = (newPos > currentPos ? 'right' : 'left')
-		let currentDirection = (newPos < currentPos ? 'right' : 'left')
-
-		indicatorElem.classList.remove(`slider__indicator--${ currentDirection }`)
-		indicatorElem.classList.add(`slider__indicator--${ newDirection }`)		
-		sliderElem.setAttribute('data-pos', newPos)
-		
-	})
-	
-})
+if (window.innerWidth < 1100) {
+    currentCard(0) 
+}
+function currentCard (indexOfDot, event){  
+    if (event) {
+        event.preventDefault(); // Prevent default behavior (page reload)
+    }
+    for (let i=0; i< cards.length; i++) {
+        if (indexOfDot == i) {
+            cards[i].classList.add("active-card")
+            dots[indexOfDot].classList.add("active")
+        } else {
+            cards[i].classList.remove("active-card")
+            dots[indexOfDot].classList.remove("active")
+        }
+    }
+}

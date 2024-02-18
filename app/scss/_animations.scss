@@ -38,3 +38,12 @@
 .fade-out {
     animation: fade-out 200ms ease-in-out backwards;
 }
+
+@keyframes cardFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
