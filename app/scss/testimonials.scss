@@ -62,7 +62,11 @@
 			border: 2px solid hsl(12, 88%, 59%);
 			display: inline-block;
 			opacity: 0.6;
-			&.acitve, &:hover {
+			&.active {
+				opacity: 1;
+				background-color: hsl(12, 88%, 59%) ;
+			}
+			&:hover {
 				opacity: 1;
 				background-color: hsl(12, 88%, 59%) ;
 			}

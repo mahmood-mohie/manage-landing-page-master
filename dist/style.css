@@ -472,7 +472,11 @@ h2 {
   display: inline-block;
   opacity: 0.6;
 }
-.testimonials__dots .dot.acitve, .testimonials__dots .dot:hover {
+.testimonials__dots .dot.active {
+  opacity: 1;
+  background-color: hsl(12deg, 88%, 59%);
+}
+.testimonials__dots .dot:hover {
   opacity: 1;
   background-color: hsl(12deg, 88%, 59%);
 }/*# sourceMappingURL=style.css.map */

@@ -29,17 +29,14 @@ let cards = document.querySelectorAll(".testimonials__card")
 if (window.innerWidth < 1100) {
     currentCard(0) 
 }
-function currentCard (indexOfDot, event){  
-    if (event) {
-        event.preventDefault(); // Prevent default behavior (page reload)
-    }
+function currentCard (indexOfDot){  
+    
     for (let i=0; i< cards.length; i++) {
         if (indexOfDot == i) {
+            dots.forEach((dot)=>dot.classList.remove("active"))
+            cards.forEach((card)=>card.classList.remove("active-card"))
             cards[i].classList.add("active-card")
             dots[indexOfDot].classList.add("active")
-        } else {
-            cards[i].classList.remove("active-card")
-            dots[indexOfDot].classList.remove("active")
         }
     }
 }
