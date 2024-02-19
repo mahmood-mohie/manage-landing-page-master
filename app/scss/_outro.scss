@@ -2,16 +2,24 @@
     background-color: $brightRed;
     &__content {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: space-between;
         padding-top: 70px;
         padding-bottom: 70px;
-
+        text-align: center;
+        @include breakpoint-up(large) {
+            flex-direction: row;
+            text-align: left;
+        }
         h3 {
             font-size: 42px;
-            width: 50%;
-            margin: 0;
+            margin-bottom: 25px;
             color: white;
+            @include breakpoint-up(large) {
+                margin: 0;
+                width: 50%;
+            }
         }
         .button {
             background-color: #fff;

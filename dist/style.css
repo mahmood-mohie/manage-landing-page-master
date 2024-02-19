@@ -520,16 +520,29 @@ h2 {
 }
 .outro__content {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding-top: 70px;
   padding-bottom: 70px;
+  text-align: center;
+}
+@media (min-width: 64em) {
+  .outro__content {
+    flex-direction: row;
+    text-align: left;
+  }
 }
 .outro__content h3 {
   font-size: 42px;
-  width: 50%;
-  margin: 0;
+  margin-bottom: 25px;
   color: white;
+}
+@media (min-width: 64em) {
+  .outro__content h3 {
+    margin: 0;
+    width: 50%;
+  }
 }
 .outro__content .button {
   background-color: #fff;
