@@ -4,7 +4,11 @@
 		align-items: center;
 		flex-direction: column;
    		text-align: center;
-		   margin: 70px 0 50px;
+		margin: 70px auto 50px;
+		
+		h2 {
+			margin-bottom: 0;
+		}
 	}
 	&__slider {
 		position: relative;
@@ -14,6 +18,13 @@
 		width: 100%;
 		height: 255px;
 		margin: 100px auto 40px;
+		@include breakpoint-up(large) {
+			align-items:flex-end;
+			justify-content: flex-start;
+			height: 290px;
+			overflow-x: scroll ;
+			margin: 73px auto 32px;
+		};
 	}
 	&__card {
 		position: absolute;
@@ -31,7 +42,16 @@
 		display: none;
 		animation: cardFade;
 		animation-duration: 200ms;
-	
+		@include breakpoint-up(large) {
+			display: flex;
+			position: relative;
+			flex: 1 0 auto;
+			width: 540px;
+			height: 86%;
+			&:not(:last-child) {
+				margin-right: 32px;
+			}
+		};
 		&.active-card {
 			display: flex;
 		}
@@ -52,6 +72,9 @@
 		}
 	}
 	&__dots {
+		@include breakpoint-up(large) {
+			display: none
+		};
 		.dot {
 			cursor: pointer;
 			height: 10px;
