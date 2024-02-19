@@ -513,4 +513,25 @@ h2 {
 .testimonials__dots .dot:hover {
   opacity: 1;
   background-color: hsl(12deg, 88%, 59%);
+}
+
+.outro {
+  background-color: hsl(12deg, 88%, 59%);
+}
+.outro__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.outro__content h3 {
+  font-size: 42px;
+  width: 50%;
+  margin: 0;
+  color: white;
+}
+.outro__content .button {
+  background-color: #fff;
+  color: hsl(12deg, 88%, 59%);
 }/*# sourceMappingURL=style.css.map */
