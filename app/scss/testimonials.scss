@@ -9,6 +9,10 @@
 		h2 {
 			margin-bottom: 0;
 		}
+
+		@include breakpoint-up(large) {
+			margin: 79px auto 178px;
+		}
 	}
 	&__slider {
 		position: relative;

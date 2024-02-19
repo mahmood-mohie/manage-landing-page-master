@@ -421,6 +421,11 @@ h2 {
 .testimonials__content h2 {
   margin-bottom: 0;
 }
+@media (min-width: 64em) {
+  .testimonials__content {
+    margin: 79px auto 178px;
+  }
+}
 .testimonials__slider {
   position: relative;
   display: flex;
