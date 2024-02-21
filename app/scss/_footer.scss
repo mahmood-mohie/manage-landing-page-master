@@ -1,21 +1,45 @@
 .footer {
     &__content {
-        padding: 50px 20px 28px;
-        font-size: 14px;
+        padding: 3.125rem 1.25rem 28px;
+        font-size: 0.875rem;
+        
+        @include breakpoint-up(large) {
+            display: grid;
+            grid-template-areas:
+            "logo links form"
+            "socials links copyright";
+            grid-template-columns: 1fr 3fr 2fr;
+            padding: 3.125rem 1.25rem 3.125rem;
+            column-gap: 1.875rem;
+        }
     }
     text-align: center;
     background-color: $veryDarkBlue;
+    @include breakpoint-up(large) {
+        text-align: left;
+    }
     &__form {
         input {
             font-weight: 700;
-            padding: 17px 24px;
-            border-radius: 50px;
+            padding: 1.0625rem 1.25rem;
+            border-radius: 3.125rem;
             border: 0;
+            &:focus {
+                outline: none;
+            }
         }
         input[type="submit"] {
+            cursor: pointer;
             background-color: $brightRed;
             color: white;
-            margin-left: 5px;
+            margin-left: 0.3125rem;
+            &:hover {
+                background-color: hsl(12deg 81% 75%);
+            }
+        }
+        @include breakpoint-up(large) {
+            grid-area: form;
+            justify-self: flex-end;
         }
     }
     &__links {
@@ -23,23 +47,67 @@
         text-align: left;
         display: flex;
         justify-content: space-around;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 3.125rem;
+        padding-bottom: 3.125rem;
         .col-1, .col-2 {
             display: flex;
             flex-direction: column;
             a {
                 color: hsl(233deg 40% 89%);
+                &:hover {
+                    color: $brightRed;
+                }
             }
+        }
+        @include breakpoint-up(large) {           
+           grid-area: links;
+           padding: 0;
         }
     }
     &__socials {
-       > a  {
-            height: 35px;
+        a  {
+            display: inline-block;
+            height: 2rem;
+            width: 2rem;
+            // transition: all 250ms ease-in-out;
+            &:not(:last-child) {
+                margin-right: 2rem;
+                @include breakpoint-up(large) {
+                    margin-right: 0.625rem;
+                }
+            }
+            &:hover svg path {
+                fill: $brightRed;
+            }
+
+            @include breakpoint-up(large) {
+                height: 1.25rem;
+                width: 1.25rem;
+            }
+        }
+        @include breakpoint-up(large) {
+            grid-area: socials;
+            align-self: flex-end;
+
         }
     }
     &__logo {
-        margin-top: 50px;
-        margin-bottom: 50px;
+        width: 9.875rem;
+        height: 1.875rem;
+        margin: 3.125rem auto;
+        &:hover svg path {
+            fill: $brightRed;
+        }
+        @include breakpoint-up(large) {
+            grid-area: logo;
+            margin: 0;
+        }
+    }
+    &__copyright {
+        @include breakpoint-up(large) {
+            grid-area: copyright;
+            align-self: flex-end;
+            justify-self: flex-end;
+        }
     }
 }
