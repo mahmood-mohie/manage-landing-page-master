@@ -12,7 +12,6 @@ This is a solution to the [Manage landing page challenge on Frontend Mentor](htt
   - [Built with](#built-with)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -29,8 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/desktop-preview.jpg.jpg)
-
+![desktop-preview](./design/desktop-preview.jpg)
 
 ### Links
 
@@ -47,8 +45,6 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - Vanilla JavaScript
-
-
 
 ## Author
 
