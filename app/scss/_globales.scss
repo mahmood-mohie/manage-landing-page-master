@@ -32,6 +32,7 @@ body {
     height: 2000px;
     display: flex;
     justify-content: center;
+    z-index: -111;
     &__pattern {
         position: absolute;
         background-image: url(/images/bg-tablet-pattern.svg);
