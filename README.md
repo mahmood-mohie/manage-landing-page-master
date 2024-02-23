@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [soon](https://your-solution-url.com)
-- Live Site URL: [soon](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/frontend-mentor-manage-landing-page-solution-W2skngAKyl)
+- Live Site URL: [Github page](https://mahmood-mohie.github.io/manage-landing-page-master/)
 
 ## My process
 
@@ -48,6 +48,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Mahmoud Mohie](https://www.your-site.com)
 - Frontend Mentor - [@mahmood-mohie](https://www.frontendmentor.io/profile/mahmood-mohie)
 - Twitter - [@mahmoud_coder](https://twitter.com/mahmoud_coder)
