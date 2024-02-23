@@ -1,10 +1,10 @@
 .outro {
-    background-image: url(/images/bg-simplify-section-mobile.svg);
+    background-image: url(./images/bg-simplify-section-mobile.svg);
     background-repeat: no-repeat;
     background-position:left ;
     background-color: $brightRed;
     @include breakpoint-up(large){
-        background-image: url(/images/bg-simplify-section-desktop.svg);
+        background-image: url(./images/bg-simplify-section-desktop.svg);
         background-position: bottom;
     }
     &__content {
